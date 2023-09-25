@@ -6,3 +6,53 @@
 
 
 ### [Paper](https://arxiv.org/abs/2309.03504)
+
+## Install package
+
+``` bash
+pytorch==1.8.2
+timm==0.3.2
+```
+
+## Training
+
+``` bash
+# folder dataset
+OMP_NUM_THREADS=1 python3 -m torch.distributed.launch --nproc_per_node=8 main_pretrain.py \
+    --batch_size 64 \
+    --accum_iter 8 \
+    --model mae_vit_base_patch16     \
+    --input_size 224 \
+    --mask_ratio 0.75     \
+    --epochs 16     \
+    --warmup_epochs 1     \
+    --blr 1.5e-4 \
+    --weight_decay 0.05 \
+    --moco_m 0.99 \
+    --cpl_ckpt  CKPT \
+    --data_path  DATA_PATH \
+    --log_dir  LOG_DIR \
+    --output_dir OUTPUT_DIR
+```
+
+```bash
+# lmdb dataset
+OMP_NUM_THREADS=1 python3 -m torch.distributed.launch --nproc_per_node=8 main_pretrain.py \
+    --batch_size 64 \
+    --accum_iter 8 \
+    --model mae_vit_base_patch16     \
+    --input_size 224 \
+    --mask_ratio 0.75     \
+    --epochs 16     \
+    --warmup_epochs 1     \
+    --blr 1.5e-4 \
+    --weight_decay 0.05 \
+    --moco_m 0.99 \
+    --use_lmdb_dataset \
+    --lmdb_txt LMDB_DATASET \
+    --cpl_ckpt  CKPT \
+    --data_path  DATA_PATH \
+    --log_dir  LOG_DIR \
+    --output_dir OUTPUT_DIR
+```
+
