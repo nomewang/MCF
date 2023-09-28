@@ -7,6 +7,12 @@
 
 ### [Paper](https://arxiv.org/abs/2309.03504)
 
+## Pre-trained Checkpoint
+
+| Model | URL |
+| - | - |
+| ViT-B/16 16 epochs| [drive](https://drive.google.com/file/d/1hZqMKUfc2J6zGMDLPB4m32fIzi0TSecU/view?usp=sharing) |
+
 ## Install package
 
 ``` bash
