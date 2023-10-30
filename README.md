@@ -3,7 +3,7 @@
 <!-- <br> -->
 [Yue Wang](https://github.com/nomewang), 
 [Jinlong Peng](https://pjl1995.github.io/),
-Jiangning Zhang,
+[Jiangning Zhang](https://zhangzjn.github.io/),
 [Ran Yi](https://yiranran.github.io/), 
 [Liang Liu](https://scholar.google.com/citations?hl=zh-CN&user=Kkg3IPMAAAAJ), 
 [Yabiao Wang](https://scholar.google.com/citations?hl=zh-CN&user=xiK4nFUAAAAJ), 
